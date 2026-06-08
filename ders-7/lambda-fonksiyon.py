@@ -38,8 +38,11 @@ print(durum_analizi(0))    # Çıktı: Sıfır
 
 # 2. map() Fonksiyonu: Eldeki bir listenin tüm elemanlarına belirli bir fonksiyonu tek tek uygulamak ve sonuçlardan yeni bir liste üretmek için kullanılır. Bizi for döngüsü yazmaktan kurtarır.
 
+# def kare(x):
+#     return x**2
+
 sayilar = [1, 2, 3, 4, 5]
-kareler = list(map(lambda x: x**2, sayilar))
+kareler = list(map(lambda x: x**2, sayilar))    #kare
 print(kareler)  # Çıktı: [1, 4, 9, 16, 25]
 
 # Not: map() fonksiyonu geriye özel bir obje döner, sonucu liste olarak görmek için başına list() ekleriz.
