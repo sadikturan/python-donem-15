@@ -1,0 +1,7 @@
+--- GÜNLÜK SATIŞ RAPORU ---
+Laptop Satış Adedi: 15
+Mouse Satış Adedi: 42
+Klavye Satış Adedi: 28
+Kulaklık Satış Adedi: 12
+Monitör Satış Adedi: 5
+Kamera Satış Adedi: 8
