@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selenium Eğitim Portalı</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .course-card { transition: transform 0.3s; cursor: pointer; }
+        .course-card:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body class="d-flex flex-column h-100 bg-light">
+
+    <header class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm p-3">
+        <div class="container">
+            <h1 id="header" class="navbar-brand mb-0 h1">Kodlama Akademisi</h1>
+            <div class="navbar-nav">
+                <a class="nav-link active" href="#">Anasayfa</a>
+                <a class="nav-link" id="contact-link" href="#">İletişim</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5 flex-shrink-0">
+        <div class="row mb-4">
+            <div class="col text-center">
+                <h2 class="text-secondary">Mevcut Kurslarımız</h2>
+                <p class="text-muted small">Aşağıdaki kurs listesini find_elements metodu ile çekebilirsiniz.</p>
+            </div>
+        </div>
+
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm course-card border-warning border-top-0 border-start-0 border-end-0 border-4">
+                    <div class="card-body">
+                        <h2 class="card-title h5">Python Programlama</h2>
+                        <p class="card-text text-muted small">Sıfırdan ileri seviyeye Selenium ve Veri Bilimi.</p>
+                        <span class="price text-primary fw-bold">499 TL</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm course-card border-primary border-top-0 border-start-0 border-end-0 border-4">
+                    <div class="card-body">
+                        <h2 class="card-title h5">Angular Masterclass</h2>
+                        <p class="card-text text-muted small">Modern web uygulamaları geliştirme teknikleri.</p>
+                        <span class="price text-primary fw-bold">599 TL</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm course-card border-info border-top-0 border-start-0 border-end-0 border-4">
+                    <div class="card-body">
+                        <h2 class="card-title h5">Javascript ES6+</h2>
+                        <p class="card-text text-muted small">Yeni nesil Javascript dünyasına giriş yapın.</p>
+                        <span class="price text-primary fw-bold">399 TL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="card shadow-lg p-4 rounded-4">
+                    <h3 class="text-center mb-4 text-secondary h4">Öğrenci Girişi</h3>
+                    <form id="login-form">
+                        <div class="mb-3">
+                            <label for="username" class="form-label fw-bold small text-muted">Kullanıcı Adı</label>
+                            <input type="text" name="username" id="username" placeholder="Kullanıcı adınızı girin" class="form-control shadow-sm">
+                        </div>
+                        <div class="mb-4">
+                            <label for="password" class="form-label fw-bold small text-muted">Şifre</label>
+                            <input type="password" name="password" id="password" placeholder="********" class="form-control shadow-sm">
+                        </div>
+                        <button type="submit" id="submit-btn" class="btn btn-primary w-100 fw-bold shadow">Giriş Yap</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="main-footer" class="bg-dark text-secondary text-center py-4 mt-auto border-top border-secondary">
+        <div class="container">
+            <p class="mb-0">&copy; <span id="displayYear"></span> Kodlama Akademisi. Tüm hakları saklıdır.</p>
+            <small class="text-muted">Selenium Otomasyon Test Sayfası v2.0</small>
+        </div>
+    </footer>
+
+    <script>
+        // Dinamik Yıl
+        document.getElementById("displayYear").innerText = new Date().getFullYear();
+
+        // Kart Tıklama Etkileşimi
+        document.querySelectorAll('.course-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const title = this.querySelector('h2').innerText;
+                alert(title + " kursuna tıkladınız! Detaylar yükleniyor...");
+            });
+        });
+
+        // Form Gönderme Etkileşimi
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const user = document.getElementById('username').value;
+            if(user) {
+                alert("Hoş geldiniz, " + user + "! Giriş başarılı.");
+            } else {
+                alert("Lütfen kullanıcı adınızı girin!");
+            }
+        });
+    </script>
+</body>
+</html>
