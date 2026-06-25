@@ -1,0 +1,82 @@
+[
+    {
+        "kurs_id": "CS101",
+        "kurs_adi": "Python ile Veri Analitiği ve Pandas",
+        "kategori": "Veri Bilimi",
+        "egitmen": "Ahmet Yılmaz",
+        "sure_saat": 40,
+        "fiyat_tl": 4500,
+        "aktif_ogrenci": 245,
+        "puan": 4.8,
+        "teknolojiler": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Matplotlib"
+        ]
+    },
+    {
+        "kurs_id": "CS102",
+        "kurs_adi": "Sıfırdan İleri Düzey .NET 10.0 Mimarisi",
+        "kategori": "Web Geliştirme",
+        "egitmen": "Zeynep Kaya",
+        "sure_saat": 60,
+        "fiyat_tl": 6200,
+        "aktif_ogrenci": 189,
+        "puan": 4.9,
+        "teknolojiler": [
+            ".NET 10.0",
+            "C#",
+            "Web API",
+            "Clean Architecture"
+        ]
+    },
+    {
+        "kurs_id": "CS103",
+        "kurs_adi": "Selenium ve Python ile Web Scraping Bot Geliştirme",
+        "kategori": "Veri Kazıma",
+        "egitmen": "Mehmet Demir",
+        "sure_saat": 30,
+        "fiyat_tl": 3800,
+        "aktif_ogrenci": 312,
+        "puan": 4.7,
+        "teknolojiler": [
+            "Python",
+            "Selenium",
+            "BeautifulSoup",
+            "Geckodriver"
+        ]
+    },
+    {
+        "kurs_id": "CS104",
+        "kurs_adi": "React Native ile Modern Mobil Uygulama Geliştirme",
+        "kategori": "Mobil Geliştirme",
+        "egitmen": "Can Tekin",
+        "sure_saat": 50,
+        "fiyat_tl": 5500,
+        "aktif_ogrenci": 156,
+        "puan": 4.6,
+        "teknolojiler": [
+            "React Native",
+            "JavaScript",
+            "TypeScript",
+            "Tailwind CSS"
+        ]
+    },
+    {
+        "kurs_id": "CS105",
+        "kurs_adi": "Büyük Veri Mühendisliği ve PySpark",
+        "kategori": "Veri Bilimi",
+        "egitmen": "Ayşe Yıldız",
+        "sure_saat": 45,
+        "fiyat_tl": 7000,
+        "aktif_ogrenci": 98,
+        "puan": 4.9,
+        "teknolojiler": [
+            "Apache Spark",
+            "PySpark",
+            "Hadoop",
+            "Docker"
+        ]
+    }
+]
