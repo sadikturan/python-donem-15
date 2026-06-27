@@ -1,0 +1,19 @@
+
+        --- DUYGU ANALİZİ RAPORU ---
+
+        Genel Durum
+        -------------------
+        Başarıyla Analiz Edilen Toplam Yorum: 2
+        Yoğunluk Nedeniyle Atlanan Yorum    : 0
+        
+        Dağılım:
+        - Pozitif  : 1
+        - Negatif  : 1
+        - Nötr     : 0
+
+        En Mutlu Müşteri Score: 95 Puan
+        Yorum: Bu fiyata alınabilecek en iyi ürün, kesinlikle tavsiye ederim.
+
+        En Kızgın Müşteri Score: 15 Puan
+        Yorum: Kargo o kadar geç geldi ki hevesim kaçtı, paketleme de kötüydü.
+        
